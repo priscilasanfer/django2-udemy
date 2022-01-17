@@ -54,3 +54,9 @@ Django-stdimage: aplicacao que facilita a trabalhar com imagens
 
 ### Criar superuser no heroku
 > heroku run python manage.py createsuperuser
+
+### Verificar se nao falta nada a ser instalado 
+> pip install -r requirements.txt   
+
+### Zerar banco de dados no heroku
+> heroku ps:reset DATABASE_URL
