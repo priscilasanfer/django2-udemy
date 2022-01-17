@@ -39,4 +39,8 @@ Django-stdimage: aplicacao que facilita a trabalhar com imagens
 
 
 
-
+### Deploy heroku
+> heroku login
+> arquivo runtime.txt 
+> arquivo Procfile
+> 
