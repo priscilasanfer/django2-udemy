@@ -38,9 +38,19 @@ Django-stdimage: aplicacao que facilita a trabalhar com imagens
 > docker-compose exec web python manage.py makemigrations 
 
 
-
-### Deploy heroku
+### Preparando o projeto para o deploy no heroku
 > heroku login
 > arquivo runtime.txt 
 > arquivo Procfile
-> 
+
+### Criando aplicação no Heroku
+> heroku create django2-prisanfer --buildpack heroku/python
+
+### Deploy no Heroku
+> git push heroku main
+
+### Realizar migrate
+> heroku run python manage.py migrate
+
+### Criar superuser no heroku
+> heroku run python manage.py createsuperuser
